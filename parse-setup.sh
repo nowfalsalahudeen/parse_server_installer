@@ -78,9 +78,9 @@ echo -p "Do you have everything you need to start? (y/n)?"
 			sudo apt-get -y install nginx
 			sudo service nginx stop
 
-			# echo "Installing WS dependency"
-			# sleep 1
-			# sudo npm install ws
+			 echo "Installing WS dependency"
+			 sleep 1
+			 sudo npm install ws
 
 			#echo "- Installing MongoDb Org. -"
 			#sleep 1
