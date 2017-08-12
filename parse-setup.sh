@@ -168,7 +168,7 @@ echo -p "Do you have everything you need to start? (y/n)?"
 					sleep 2
 					# Had to do it this way because dynamic domain didn't work in SH , had to export dynamic name to BASH
 					export domain
-					bash ~/parse_server_installer/mongoSSL.sh
+					bash /home/nowfalsalahudeen/parse_server_installer/mongoSSL.sh
 
 				;;
 				n)
@@ -185,7 +185,7 @@ echo -p "Do you have everything you need to start? (y/n)?"
 			sleep 2
 
 
-			cd ~/parse-server-example
+			cd /home/nowfalsalahudeen/parse-server-example
 			sudo forever-service install parse-server --script index.js
 			sudo start parse-server
 			cd ..
@@ -193,7 +193,7 @@ echo -p "Do you have everything you need to start? (y/n)?"
 			# cd parse-dashboard
 			# sudo forever-service install parse-dashboard --script ./Parse-Dashboard/index.js --scriptOptions " allowInsecureHTTP"
 			# sudo start parse-dashboard
-			echo "start on startup\nexec parse-dashboard --config /root/parse-dashboard/Parse-Dashboard/parse-dashboard-config.json --allowInsecureHTTP true" > /etc/init/parse-dashboard.conf
+			echo "start on startup\nexec parse-dashboard --config /home/nowfalsalahudeen/parse-dashboard/Parse-Dashboard/parse-dashboard-config.json --allowInsecureHTTP true" > /etc/init/parse-dashboard.conf
 
 			echo "- Generating Unique Master & Client Keys -"
 			sleep 2
